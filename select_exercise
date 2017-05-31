@@ -1,7 +1,7 @@
 
 USE codeup_test_db;
 
-SELECT name FROM albums where artist = 'Pink Floyd';
+SELECT name from albums where artist = 'Pink Floyd';
 SELECT release_date from albums where name = 'Saturday Night Fever';
 SELECT genre from albums where name = 'Rumours';
 SELECT name from albums where release_date = '1990';
