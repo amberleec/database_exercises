@@ -1,0 +1,4 @@
+USE codeup_test_db;
+
+
+INSERT INTO people(name,age) VALUES ('Amberlee Childress',999.9);
