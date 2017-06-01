@@ -1,0 +1,8 @@
+SELECT 'Albums releassed after 1991' as '';
+DELETE * FROM albums WHERE release_date > 1991;
+
+SELECT 'Albums with the genre' 'disco';
+DELETE * FROM albums WHERE  genre = 'disco';
+
+SELECT 'Albums by "Whitney Houston"';
+DELETE * FROM albums WHERE artist LIKE '%Whitney Houston%';
