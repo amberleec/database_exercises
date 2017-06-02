@@ -32,8 +32,8 @@ INSERT INTO users (name, email, role_id) VALUES
   ('cheyenne', 'cheyenne@example.com', null);
   ('cassy', 'cassy@example.com', 5);
 
-select * users;
-select * roles;
+select * from users;
+select * from roles;
 
 from users
 left join roles on users.role_id = roles.id;
