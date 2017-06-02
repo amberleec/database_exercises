@@ -1,0 +1,36 @@
+USE employees;
+
+SELECT emp_no, first_name, last_name
+FROM employees
+WHERE first_name = 'Irena'
+      OR first_name = 'Maya'
+      OR first_name = 'Vidya';
+
+SELECT emp_no, first_name, last_name, gender
+FROM employees
+WHERE first_name = 'Irena'
+      OR first_name = 'Maya'
+      OR first_name = 'Vidya';
+AND gender = 'M';
+
+
+
+SELECT *
+FROM employees
+WHERE last_name like '%E'
+      OR last_name like '%E';
+
+SELECT *
+FROM employees
+WHERE last_name like 'E%E';
+
+
+SELECT *
+FROM employees
+WHERE hire_date BETWEEN '1990-01-01' AND '1999-12-31'
+      AND birth_date like '%12-25';
+
+SELECT *
+from employees
+WHERE last_name like '%q'
+      AND last_name NOT like '%qu%';
