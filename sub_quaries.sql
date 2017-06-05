@@ -1,15 +1,13 @@
 USE employees;
 
-# Find all the employees with the same hire date as employee 101010 using a sub-query.
-# Find all the titles held by all employees with the first name Aamod.
 
 select *
-from department
-where employees
-and emp_no
- from hire_date
-where to_date > 101010()
-);
+from employees
+where emp_no = 101010;
+
+select * from employees where hire_date = '1990-10-22'
+
+
 
 select last_name
 from employees
@@ -38,3 +36,4 @@ where gender = 'F'
   from dept_manager
   where to_date > now()
 );
+
