@@ -35,15 +35,19 @@ INSERT INTO users (name, email, role_id) VALUES
 select * from users;
 select * from roles;
 
+select *
 from users
 left join roles on users.role_id = roles.id;
 
+select *
 from users
 right join roles on users.role_id = roles.id;
 
+select *
 from roles
 left join users on roles.user_id = users.id;
 
+select *
 from roles
 right join roles on roles.user_id = users.id;
 
