@@ -5,7 +5,7 @@ select *
 from employees
 where emp_no = 101010;
 
-select * from employees where hire_date = '1990-10-22'
+select * from employees where hire_date = '1990-10-22';
 
 
 
@@ -36,4 +36,3 @@ where gender = 'F'
   from dept_manager
   where to_date > now()
 );
-
