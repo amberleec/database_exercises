@@ -1,11 +1,13 @@
 USE adlister_db;
 
+TRUNCATE users;
 
-TRUNCATE ads;
+INSERT INTO users (username, email, password)
+VALUES ('Amberlee', 'amberlee@mail.com', '123'),
+  ('Ethan', 'ethan@mail.com', '123'),
+  ('Cassy', 'cassy@mail.com', '123'),
+  ('Chey', 'chey@mail.com', '123'),
+  ('Sarah', 'sarah@mail.com', '123');
 
-INSERT INTO ads (user_id, title, description)
-VALUES (1, 'Electronics','Ipods and Ipads for sale'),
-  (2, 'Nitendo DS', 'Nintendo DS for sale'),
-  (3, 'Clothes', 'shirts and pants for sale'),
-  (4, 'Shoes', 'nikes for sale');
+
 
