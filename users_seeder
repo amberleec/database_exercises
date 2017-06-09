@@ -1,0 +1,11 @@
+USE adlister_db;
+
+
+TRUNCATE ads;
+
+INSERT INTO ads (user_id, title, description)
+VALUES (1, 'Electronics','Ipods and Ipads for sale'),
+  (2, 'Nitendo DS', 'Nintendo DS for sale'),
+  (3, 'Clothes', 'shirts and pants for sale'),
+  (4, 'Shoes', 'nikes for sale');
+

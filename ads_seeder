@@ -1,0 +1,11 @@
+USE adlister_db;
+
+
+TRUNCATE users;
+
+INSERT INTO users (username, email, password)
+VALUES ('Amberlee', 'amberlee@mail.com', '123'),
+  ('Ethan', 'ethan@mail.com', '123'),
+  ('Cassy', 'cassy@mail.com', '123'),
+  ('Chey', 'chey@mail.com', '123'),
+  ('Sarah', 'sarah@mail.com', '123');
