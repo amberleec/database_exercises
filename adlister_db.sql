@@ -4,7 +4,7 @@ USE adlister_db;
 
 CREATE USER 'username'@'hostname';
 
-GRANT ALL ON *.* TO 'username'@'localhost';
+GRANT ALL ON adlister_db.* TO 'username'@'localhost';
 
 
 
